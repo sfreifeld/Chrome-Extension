@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const textArea = document.getElementById('rewrittenText');
       try {
         await navigator.clipboard.writeText(textArea.value);
+        const button = document.getElementById('copyText');
+        button.textContent = 'Copied!';
         console.log('Text copied successfully');
       } catch (err) {
         console.error('Failed to copy text:', err);

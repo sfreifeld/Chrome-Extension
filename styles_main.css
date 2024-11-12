@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    /* background-color: #F9FAFB;  Light Gray */
+    background: 
+        linear-gradient(135deg, rgba(240, 244, 248, 0.9), rgba(255, 255, 255, 0.5)),
+        url('white.png') repeat;
+    background-size: cover, auto;
+
+    margin: 0;
+    padding: 20px;
+    min-height: 300px; /* Minimum height */
+    box-sizing: border-box;
+  }
+
+  /* Header styling */
+  h3 {
+    font-size: 35px;
+    color: #3B82F6; /* Primary Royal Blue */
+    margin: 10px 0 20px;
+    text-align: center;
+  }
+
+  /* Text area styling with auto height */
+  #rewrittenText {
+    width: 100%;
+    min-height: 150px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    color: #111827; /* Dark Gray for text */
+  }
+
+  /* Button styling */
+  #copyText {
+    width: 100%;
+    padding: 12px;
+    background-color: #3B82F6; /* Primary Royal Blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #copyText:hover {
+    background-color: #2563EB; /* Darker Blue on Hover */
+    transform: translateY(-2px); /* Slight hover effect */
+  }
+
+  /* Optional footer styling for subtle branding */
+  .footer {
+    font-size: 12px;
+    color: #6B7280; /* Medium Gray */
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .footer a {
+    color: #3B82F6;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }

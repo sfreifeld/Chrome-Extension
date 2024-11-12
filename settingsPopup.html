@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PolishPro Settings</title>
+  <link rel="stylesheet" href="styles_settings.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Settings</h2>
+  
+    <!-- Name Input -->
+    <div class="form-group">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" id="name" class="form-input disabled" disabled value="Your Name">
+    </div>
+
+    <!-- Formality Slider -->
+    <div class="form-group">
+      <label for="formalitySlider" class="form-label">Formality Level</label>
+      <div class="slider-container">
+        <input type="range" id="formalitySlider" class="form-slider disabled" min="1" max="5" value="5" disabled>
+        <div class="slider-labels">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit/Save Button -->
+    <div class="button-container">
+      <button id="editSaveButton">Edit</button>
+    </div>
+
+    <div class="shortcut-info">
+      <p>💡 Tip: Instead of right-clicking, you can use Ctrl + Shift + E as a shortcut. To customize, visit 
+        <a href="#" id="shortcutLink">Chrome Extension Shortcuts</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>
